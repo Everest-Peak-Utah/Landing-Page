@@ -196,6 +196,7 @@ h4 {
    }
    h2 {
       font-size: 2vh;
+      margin-bottom: 0;
    }
    p {
       margin: 0;
