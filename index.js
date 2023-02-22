@@ -18,5 +18,6 @@ function areaCoveredClick(){
     x.style.maxHeight = '250px';
   } else {
     x.style.maxHeight = '0px';
+    document.getElementsByClassName('dropdown')[0].style.border = '2px solid black !important';
   }
 }
