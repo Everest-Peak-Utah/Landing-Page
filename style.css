@@ -403,4 +403,10 @@ input {
       margin: 1rem;
       font-size: 1.5rem;
    }
+   a {
+      color: black;
+   }
+   a:visited {
+      color: black;
+   }
 }
