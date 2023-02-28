@@ -24,7 +24,7 @@ function areaCoveredClick(){
 function servicesClick(){
   let x = document.getElementsByClassName('service-content')[0];
   if(x.style.maxHeight == '0px'){
-    x.style.maxHeight = '250px';
+    x.style.maxHeight = '450px';
   } else {
     x.style.maxHeight = '0px';
     document.getElementsByClassName('servicesMenu')[0].style.border = '2px solid black !important';
