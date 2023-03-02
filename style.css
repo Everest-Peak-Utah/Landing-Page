@@ -390,6 +390,7 @@ h4 {
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 1rem;
 }
 .background-image {
    width: 100%;
@@ -423,7 +424,7 @@ input {
    height: 5rem;
 }
 .formTitle {
-   font-size: 6vh;
+   font-size: 4rem;
    z-index: 1;
    background: linear-gradient(45deg, #ebe8e8 0%, #e6e4e4 100%);
    border-radius: 15px;
