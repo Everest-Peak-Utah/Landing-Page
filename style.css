@@ -2,6 +2,10 @@
    font-family: 'Futura';
    src: url('./futura-std-4-cufonfonts-webfont/FuturaStdBook.woff') format('woff')
  }
+ @font-face {
+   font-family: 'FuturaBold';
+   src: url('./futura-std-4-cufonfonts-webfont/FuturaStdBold.woff') format('woff')
+ }
  html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, img, strong,
 b, u, i, ul, li, form, label, footer, header, nav {
 	margin: 0;
@@ -52,7 +56,8 @@ nav {
    background-color: transparent;
    border: 2px solid black;
    border-radius: 10px;
-   font-weight: 800;
+   font-family: FuturaBold;
+   font-size: 1rem;
    cursor: pointer;
 }
 .quoteBtn:hover {
@@ -96,11 +101,14 @@ li:hover {
    height: 3rem;
    width: 10rem;
    border-radius: 10px;
-   font-weight: 800;
    padding: 10px;
-   font-size: 16px;
+   font-family: FuturaBold;
+   font-size: 1rem;
    border: none;
    cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
  }
  .dropdown-content {
    width: 10rem;
@@ -134,9 +142,9 @@ li:hover {
    height: 3rem;
    width: 10rem;
    border-radius: 10px;
-   font-weight: 800;
+   font-family: FuturaBold;
+   font-size: 1.25rem;
    padding: 10px;
-   font-size: 16px;
    border: none;
    cursor: pointer;
  }
@@ -172,16 +180,18 @@ li:hover {
    flex-direction: column;
    font-size: 3.75vh;
    padding-left: 2em;
-   font-weight: 900;
+   font-family: FuturaBold;
+}
+.titleText {
+   color: white;
 }
 h1{
    font-size: 10vh;
-   border-bottom: 2px solid #A31621;
 }
 h2 {
+   font-family: FuturaBold;
    font-size: 5vh;
-   font-weight: 600;
-   border-bottom: 2px solid #A31621;
+
 }
 .cont2 {
    background-image: url('imgs/land2.jpg');
@@ -191,6 +201,10 @@ h2 {
    justify-content: flex-start;
    align-items: center;
 }
+/* for second card text ALL CHILDREN */
+.cont2 * {
+   color: white;
+}
 hr {
    color: #A31621;
    background-color: #A31621;
@@ -198,12 +212,13 @@ hr {
    height: 2px;
 }
 .card {
-   background: linear-gradient(45deg, #ebe8e8 0%, rgb(180, 180, 180) 100%);
+   /* background: linear-gradient(45deg, #ebe8e8 0%, rgb(180, 180, 180) 100%); */
+   background: linear-gradient(45deg, #1b1b1b 0%, rgb(90, 90, 90) 100%);
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    opacity: 0.9;
-   width: 60vh;
+   width: 50vh;
    height: 30vh;
    margin: 2em;
    padding: 2em;
@@ -211,7 +226,7 @@ hr {
    border-radius: 10%;
 }
 .card p {
-   font-weight: 900;
+   font-family: FuturaBold;
    font-size: 1.5rem;
 }
 h3 {
